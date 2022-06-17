@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>video</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="section"></section>
+    <section class="section0"></section>
+    <section class="section"></section>
+    <div class="video-block">
+      <div class="video-controls">
+        <div class="video-fullscreen" mode="close">
+          <svg class="fullscreen" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2H7V0H0V7H2V2ZM7 16H2V11H0V18H7V16ZM18 11H16V16H11V18H18V11ZM16 7H18V0H11V2H16V7Z" />
+          </svg>
+        </div>
+        <div class="video-cross" mode="close"></div>
+      </div>
+      <div class="video-file">
+        <video class="video-video" autoplay loop muted preload="auto" playsinline controlslist="nodownload"
+          disablepictureinpicture src="https://agencyima.ru/wp-content/uploads/vmarketing.mp4"></video>
+      </div>
+      <button class="btn video-btn" href="#popup-request">Заказать</button>
+    </div>
+    <div class="popup popup-order">
+      <div class="popup__content">
+        <div class="popup__body">
+          <span class="popup__close"></span>
+          <div class="popup__content">
+            <form action="#" class="popup-order__form form">
+              <div class="form__header">Запись на прием</div>
+              <input class="form__input input-name" name="name" type="text" autocorrect="off" autocomplete="name"
+                placeholder="Ваше имя">
+              <input class="form__input input-tel" name="tel" type="tel" autocorrect="off" autocomplete="tel"
+                placeholder="Телефон">
+              <button class="btn form__btn" type="submit">Отправить запрос</button>
+              <div class="form__disclaimer">Нажимая на кнопку «Отправить запрос», Вы принимаете "<a
+                  href="/assets/files/consent.doc">
+                  Согласие на обработку персональных данных</a>" в соответствии с "<a
+                  href="/privacy-policy.html">Политикой конфиденциальности</a>" сайта. "
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
